@@ -1,3 +1,10 @@
+" trailing unwanted space/tab
+set wrap
+set linebreak
+" note trailing space at end of next line
+set showbreak=>\ \ \
+autocmd BufWritePre * %s/\s\+$//e
+
 
 " disable visual mode
 set mouse-=a
@@ -18,3 +25,7 @@ set bg=dark    " Setting dark mode
 syntax on
 " set vim colorschem
 colorscheme gruvbox
+
+set number
+highlight ColorColumn ctermbg=magenta "set to whatever you like
+call matchadd('ColorColumn', '\%81v', 100) "set column nr
