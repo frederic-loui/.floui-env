@@ -16,6 +16,8 @@ call plug#begin('~/.vim/plugged')
 
 Plug 'rightson/vim-p4-syntax'
 Plug 'morhetz/gruvbox'
+Plug 'momota/junos.vim'
+Plug 'momota/cisco.vim'
 
 call plug#end()
 
